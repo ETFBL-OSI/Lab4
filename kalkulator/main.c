@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+int oduzimanje(int a,int b)
+{
+	int sub;
+	sub= a-b;
+	return sub;
+}
+
 int mnozenje(int a, int b) { return a*b; }
 
 int floorSqrt(int);
