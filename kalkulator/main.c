@@ -2,10 +2,23 @@
 #include <stdlib.h>
 
 int mnozenje(int a, int b) { return a*b; }
+
 int floorSqrt(int);
+
+
+#include <math.h>
+
+int stepenovanje(int broj,int stepen)
+{
+    return pow(broj,stepen);
+
+}
+
+
 
 int main()
 {
+
     printf("Hello world!\n");
     return 0;
 }
