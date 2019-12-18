@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int mnozenje(int a, int b) { return a*b; }
+int floorSqrt(int);
+
 int main()
 {
     printf("Hello world!\n");
     return 0;
 }
-<<<<<<< HEAD
 
 int sabiranje (int a, int b)
 {
@@ -20,5 +22,17 @@ int faktorijel(int num){
     }
     return f;
 }
->>>>>>> funkcija za racunanje faktorijela nekog broja
+
+int floorSqrt(int x)
+{
+    if (x == 0 || x == 1)
+    return x;
+
+    int i = 1, result = 1;
+    while (result <= x)
+    {
+      i++;
+      result = i * i;
+    }
+    return i - 1;
 }
