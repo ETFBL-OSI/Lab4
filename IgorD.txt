@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 test
 aaaaaaaaaaaaaaaaa
+=======
+bnasklndtest
+>>>>>>> ef0477a257f24eb6ba1c7be1990d49b176fba581
