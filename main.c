@@ -1,5 +1,3 @@
-int sabiranjeDvaBroja(int a, int b) {
-    return a + b;
-}
+#include "sabiranjeDvaBroja.h"
 
 int main();
