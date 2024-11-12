@@ -1,7 +1,17 @@
 #include <stdio.h>
-
+int zbir_prvih_n_brojeva(int n)
+{
+    if(n<0)return 0;
+    int suma=0;
+    for(int i=0;i<=n;i++)
+    suma+=i;
+    return suma;
+}
 int main()
 {
-    printf("Hello world!\n");
+    int n;
+    scanf("%d",&n);
+    int ispis=zbir_prvih_n_brojeva(n);
+    printf("%d",ispis);
     return 0;
 }
