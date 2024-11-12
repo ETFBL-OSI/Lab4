@@ -1,5 +1,20 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdarg.h>
+
+float srednja_vrijednost(int n, ...)
+{
+    va_list arg;
+    va_start(arg, n);
+    int sum;
+    for(int i = 0; i<n; i++)
+    {
+        sum += va_arg(arg, int);
+    }
+    va_end(arg);
+    return sum / n;
+}
+
 double stepenovanje(double baza, double eksponent){
     return pow(baza,eksponent);
 }
@@ -10,7 +25,8 @@ int racunanjestatka(int broj, int djelilac);
 int main()
 {
     int a,b;
-
+    float sr = srednja_vrijednost(4, 1, 3, 5, 7);
+    printf("Srednja vrijednost: %.2f\n", sr);
     printf("Hello world!\n");
     printf("Unesite 2 broja:");
     scanf("%d %d",&a,&b);
