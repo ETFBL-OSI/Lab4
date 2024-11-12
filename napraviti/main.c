@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdarg.h>
+int zbir_prvih_n_brojeva(int n)
+{
+    if(n<0)return 0;
+    int suma=0;
+    for(int i=0;i<=n;i++)
+    suma+=i;
+    return suma;
+}
+int sabiranje2Broja(int a, int b);
+
 
 float srednja_vrijednost(int n, ...)
 {
@@ -41,17 +51,19 @@ int main()
 {
     int a,b;
 
+    int n;
+    scanf("%d",&n);
+    int ispis=zbir_prvih_n_brojeva(n);
+    printf("%d",ispis);
 
-    printf("Hello world!\n");
     printf("Unesite 2 broja:");
     scanf("%d %d",&a,&b);
     printf("Suma 2 broja:%d",sabiranje2Broja(a,b));
-    /*int a, b;
+    int aa, bb;
     printf("Unesi dva broja: ");
-    scanf("%d %d", &a, &b);
-    int x = oduzimanjeDvaBroja(a,b);
-    printf("Razlika dva unesena broja %d i %d je: %d", a,b,x);
-    */
+    scanf("%d %d", &aa, &bb);
+    int x = oduzimanjeDvaBroja(aa,bb);
+    printf("Razlika dva unesena broja %d i %d je: %d", aa,bb,x);
 
     float sr = srednja_vrijednost(4, 1, 3, 5, 7);
     printf("Srednja vrijednost: %.2f\n", sr);
@@ -65,16 +77,15 @@ int main()
     printf("Suma 2 broja:%d",sabiranje2Broja(a,b));
     int ostatak = racunanjeOstatka(10, 3);
 
-    /*
-    double aa = 2;
-    double bb = 3;
-    double cc = stepenovanje(a,b);
+
+    double aaa = 2;
+    double bbb = 3;
+    double ccc = stepenovanje(a,b);
     printf("%lf", c);
-    */
+
     return 0;
-
-
 }
+
 int sabiranje2Broja(int a, int b)
 {
     return a+b;
@@ -85,4 +96,3 @@ int racunanjeOstatka(int broj, int djelilac){
     ostatak = broj % djelilac;
     return ostatak;
 }
-
