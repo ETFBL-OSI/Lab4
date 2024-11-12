@@ -1,4 +1,22 @@
 #include <stdio.h>
+int zbir_prvih_n_brojeva(int n)
+{
+    if(n<0)return 0;
+    int suma=0;
+    for(int i=0;i<=n;i++)
+    suma+=i;
+    return suma;
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int ispis=zbir_prvih_n_brojeva(n);
+    printf("%d",ispis);
+    return 0;
+}
+/*int sabiranje2Broja(int a, int b)
+=======
 #include <math.h>
 #include <stdarg.h>
 
@@ -19,6 +37,11 @@ double stepenovanje(double baza, double eksponent){
     return pow(baza,eksponent);
 }
 
+
+int oduzimanjeDvaBroja(int a, int b)
+{
+    return a-b;
+
 int racunanjestatka(int broj, int djelilac);
 
 
@@ -35,7 +58,20 @@ int faktorijel(int broj){
 int main()
 {
     int a,b;
-    float sr = srednja_vrijednost(4, 1, 3, 5, 7);
+
+
+    printf("Hello world!\n");
+    printf("Unesite 2 broja:");
+    scanf("%d %d",&a,&b);
+    printf("Suma 2 broja:%d",sabiranje2Broja(a,b));
+    /*int a, b;
+    printf("Unesi dva broja: ");
+    scanf("%d %d", &a, &b);
+    int x = oduzimanjeDvaBroja(a,b);
+    printf("Razlika dva unesena broja %d i %d je: %d", a,b,x);
+    */
+
+    /*float sr = srednja_vrijednost(4, 1, 3, 5, 7);
     printf("Srednja vrijednost: %.2f\n", sr);
     printf("Hello world!\n");
 
@@ -46,27 +82,25 @@ int main()
     scanf("%d %d",&a,&b);
     printf("Suma 2 broja:%d",sabiranje2Broja(a,b));
     int ostatak = racunanjeOstatka(10, 3);
+*/
     /*
     double aa = 2;
     double bb = 3;
     double cc = stepenovanje(a,b);
     printf("%lf", c);
-*/
-    float n, percentage, result;
-    printf("Unesite broj:");
-    scanf("%f", &n);
-    printf("Unesite procenat:");
-    scanf("%f", &percentage);
-    result = n*(percentage/100);
-    printf("Procenat broja je: %0.2f.", result);
+    */
 
 
-    return 0;
-}
+
+
+
 int sabiranje2Broja(int a, int b)
 {
     return a+b;
 }
+
+
+
 int racunanjeOstatka(int broj, int djelilac){
     int ostatak;
     ostatak = broj % djelilac;
