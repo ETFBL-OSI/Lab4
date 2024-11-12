@@ -23,7 +23,7 @@ double stepenovanje(double baza, double eksponent){
 int oduzimanjeDvaBroja(int a, int b)
 {
     return a-b;
-
+}
 int racunanjestatka(int broj, int djelilac);
 
 
@@ -70,24 +70,15 @@ int main()
     double bb = 3;
     double cc = stepenovanje(a,b);
     printf("%lf", c);
-<<<<<<< HEAD
     */
     return 0;
 
-
-
-
-
-    return 0;
 
 }
 int sabiranje2Broja(int a, int b)
 {
     return a+b;
 }
-
-
-
 
 int racunanjeOstatka(int broj, int djelilac){
     int ostatak;
