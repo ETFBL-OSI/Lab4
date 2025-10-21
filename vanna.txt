@@ -1,2 +1,4 @@
 tekst
 auto
+nebitno
+
