@@ -1,4 +1,3 @@
 tekst
-auto
-nebitno
+3
 
